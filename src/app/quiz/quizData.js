@@ -1,7 +1,7 @@
 angular.module('quiz.data', [])
 	.factory('QuizData', function() {
 		return [{
-			question: 'Which algorithim would you use to hash passwords?',
+			question: 'Which algorithm would you use to hash passwords?',
 			answers: [
 				"sha1",
 				"bcrypt",
@@ -9,16 +9,16 @@ angular.module('quiz.data', [])
 			],
 			correct: 1
 		}, {
-			question: 'How do you prevent CSRF attacks?',
+			question: 'How would you prevent CSRF attacks?',
 			answers: [
 				"I use cookies, so I'm not vulnerable to CSRF",
-				"My site does not have CSRF issues because it has only GET",
+				"My site does not have CSRF issues because it only does GETs",
 				"I create a random value each time a POST is made",
-				"I use token-based authentication which has CSRF protection built in"
+				"I use token-based authentication which has CSRF protection built-in"
 			],
 			correct: 3
 		}, {
-			question: 'Which of this websites is sensible to the Covert Redirect vulnerability?',
+			question: 'Which of these websites is vulnerable to the Covert Redirect attack?',
 			answers: [
 				"Google. They should have searched what to do",
 				"Facebook",
@@ -27,7 +27,7 @@ angular.module('quiz.data', [])
 			],
 			correct: 1
 		}, {
-			question: 'bcrypt has an algorithm that...',
+			question: 'bcrypt uses an algorithm that...',
 			answers: [
 				"Uses multihashes",
 				"Uses hashes with a per user salt",
@@ -36,7 +36,7 @@ angular.module('quiz.data', [])
 			],
 			correct: 2
 		}, {
-			question: 'A JSon web token is a...',
+			question: 'A Json web token is an...',
 			answers: [
 				"Opaque token",
 				"Stateless Token",
@@ -44,20 +44,11 @@ angular.module('quiz.data', [])
 			],
 			correct: 1
 		}, {
-			question: 'When you will use Google Authenticator as a 2nd factor Auth mechanism?',
+			question: 'When would you use Google Authenticator as a 2nd. factor auth mechanism?',
 			answers: [
-				"When all my users have a Google account",
-				"When all my users have an Android",
-				"When all my users have a Smartphone",
-				"None of the above"
-			],
-			correct: 2
-		}, {
-			question: 'When you will use Google Authenticator as a 2nd factor Auth mechanism?',
-			answers: [
-				"When all my users have a Google account",
-				"When all my users have an Android",
-				"When all my users have a Smartphone",
+				"When my users have a Google account",
+				"When my users have an Android device",
+				"When my users have a Smartphone",
 				"None of the above"
 			],
 			correct: 2
