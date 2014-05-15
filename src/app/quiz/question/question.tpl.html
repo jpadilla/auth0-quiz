@@ -1,7 +1,10 @@
 <div>
   <h2>{{question.question}}</h2>
   <div ng-repeat="answer in question.answers">
-  	<input type="radio" ng-model="question.response" ng-value="$index" />{{answer}}
+	<label>
+		<input type="radio" ng-model="question.response" ng-value="$index" />
+		{{answer}}
+  	</label>
   </div>
   <button ng-disabled="empty(question)" ng-click="finish()" ng-show="questions.length - 1 == number">Finish</button>
   <button ng-disabled="empty(question)" ng-click="next()" ng-hide="questions.length - 1 == number">Next</button>

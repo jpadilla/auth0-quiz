@@ -25,7 +25,10 @@ angular.module("quiz/question/question.tpl.html", []).run(["$templateCache", fun
     "<div>\n" +
     "  <h2>{{question.question}}</h2>\n" +
     "  <div ng-repeat=\"answer in question.answers\">\n" +
-    "  	<input type=\"radio\" ng-model=\"question.response\" ng-value=\"$index\" />{{answer}}\n" +
+    "	<label>\n" +
+    "		<input type=\"radio\" ng-model=\"question.response\" ng-value=\"$index\" />\n" +
+    "		{{answer}}\n" +
+    "  	</label>\n" +
     "  </div>\n" +
     "  <button ng-disabled=\"empty(question)\" ng-click=\"finish()\" ng-show=\"questions.length - 1 == number\">Finish</button>\n" +
     "  <button ng-disabled=\"empty(question)\" ng-click=\"next()\" ng-hide=\"questions.length - 1 == number\">Next</button>\n" +
