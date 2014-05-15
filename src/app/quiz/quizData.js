@@ -8,8 +8,7 @@ angular.module('quiz.data', [])
 				"quicksort"
 			],
 			correct: 1
-		}, 
-		{
+		}, {
 			question: 'How do you prevent CSRF attacks?',
 			answers: [
 				"I use cookies, so I'm not vulnerable to CSRF",

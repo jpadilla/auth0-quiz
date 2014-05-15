@@ -21,4 +21,8 @@ angular.module( 'quiz.quiz.question', [
   $scope.finish = function() {
   	$state.go('quiz.finish');
   }
+
+  $scope.empty = function(question) {
+  	return _.isUndefined(question.response) || _.isNull(question.response);
+  }
 });
