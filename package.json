@@ -1,11 +1,16 @@
 {
   "name": "auth0-quiz",
+  "author": "Martin Gontovnikas", 
   "version": "0.1.0",
-  "homepage": "https://github.com/auth0/auth0-quiz",
+  "homepage": "http://www.auth0.com/",
   "bugs": "https://github.com/auth0/auth0-quiz/issues",
   "repository": {
     "type": "git",
     "url": "git@github.com:auth0/auth0-quiz.git"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/ngbp/ngbp/master/LICENSE"
   },
   "dependencies": {},
   "devDependencies": {
@@ -13,7 +18,7 @@
     "grunt-contrib-less": "~0.11.0",
     "grunt-contrib-clean": "^0.4.1",
     "grunt-contrib-copy": "^0.4.1",
-    "grunt-contrib-concat": "^0.3.0",
+    "grunt-contrib-concat": "0.4.0",
     "grunt-contrib-watch": "^0.4.4",
     "grunt-contrib-uglify": "^0.2.7",
     "grunt-ngmin": "0.0.2",
