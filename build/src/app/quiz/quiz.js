@@ -19,6 +19,6 @@ angular.module('quiz.quiz', [
   'QuizHelper',
   '$state',
   function HomeController($scope, QuizHelper, $state) {
-    $scope.questions = QuizHelper.getQuestions(4);
+    $scope.questions = QuizHelper.getQuestions(3);
   }
 ]);
