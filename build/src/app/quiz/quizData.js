@@ -37,9 +37,9 @@ angular.module('quiz.data', []).factory('QuizData', function () {
       correct: 0
     },
     {
-      question: 'A Json web token is an...',
+      question: 'What is a JSON Web Token?',
       answers: [
-        'A digitally signed Json object',
+        'A digitally signed JSON object',
         'A token invented by Jason Bourne',
         'An encrypted XML document'
       ],
