@@ -13,44 +13,40 @@ angular.module('quiz.data', [])
 			answers: [
 				"I use cookies, so I'm not vulnerable to CSRF",
 				"My site does not have CSRF issues because it only does GETs",
-				"I create a random value each time a POST is made",
 				"I use token-based authentication which has CSRF protection built-in"
 			],
-			correct: 3
+			correct: 2
 		}, {
 			question: 'Which of these websites is vulnerable to the Covert Redirect attack?',
 			answers: [
 				"Google. They should have searched what to do",
 				"Facebook",
 				"http://www.nyancat.com/",
-				"All of the above"
+				"...mmmm...covert what?"
 			],
 			correct: 1
 		}, {
-			question: 'bcrypt uses an algorithm that...',
+			question: 'Why is bcrypt better to hash passwords?',
 			answers: [
-				"Uses multihashes",
-				"Uses hashes with a per user salt",
-				"Uses a hash that takes a long time to compute",
+				"Uses multiple iterations to hash passwords",
 				"Uses hashes, salt and pepper"
 			],
-			correct: 2
+			correct: 0
 		}, {
 			question: 'A Json web token is an...',
 			answers: [
-				"Opaque token",
-				"Stateless Token",
-				"None of the above"
+				"A digitally signed Json object",
+				"A token invented by Jason Bourne",
+				"An encrypted XML document"
+			],
+			correct: 0
+		}, {
+			question: 'How would you implement Multifactor Auth?',
+			answers: [
+				"Using the X-Factor",
+				"With Google Authenticator",
+				"Asking your users for 2 passwords"
 			],
 			correct: 1
-		}, {
-			question: 'When would you use Google Authenticator as a 2nd. factor auth mechanism?',
-			answers: [
-				"When my users have a Google account",
-				"When my users have an Android device",
-				"When my users have a Smartphone",
-				"None of the above"
-			],
-			correct: 2
 		}];
 	});
