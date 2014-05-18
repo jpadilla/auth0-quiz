@@ -68,6 +68,7 @@ module.exports = {
     css: [
     ],
     assets: [
+      'vendor/auth0-styleguide/img/*'
     ]
   },
 };

@@ -3,7 +3,7 @@ angular.module('templates-app', ['home/home.tpl.html', 'quiz/finish/finish.tpl.h
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
     "<div>\n" +
-    "  <h1 id=\"logo\"><img src=\"../vendor/auth0-styleguide/img/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
+    "  <h1 id=\"logo\"><img src=\"assets/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
     "  <div class=\"home-description\">\n" +
     "  	\n" +
     "	  <p class=\"\">Hi and welcome to the Auth0 quiz. Do you want to test how much you know about security, authentication and authorization of your app?</p>\n" +
@@ -43,7 +43,7 @@ angular.module("quiz/question/question.tpl.html", []).run(["$templateCache", fun
 angular.module("quiz/quiz.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("quiz/quiz.tpl.html",
     "<div>\n" +
-    "  <h1 id=\"logo\"><img src=\"../vendor/auth0-styleguide/img/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
+    "  <h1 id=\"logo\"><img src=\"assets/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
     "\n" +
     "  <div ui-view ></div>\n" +
     "</div>");
