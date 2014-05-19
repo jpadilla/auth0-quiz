@@ -10,7 +10,7 @@ angular.module( 'quiz.quiz.finish', [
     data: { pageTitle: 'Quiz' }
   });
 })
-.controller( 'FinishCtrl', function HomeController( $scope, QuizHelper, $http ) {
+.controller( 'FinishCtrl', function HomeController( $scope, QuizHelper, $http, $state ) {
   $scope.finishInfo = QuizHelper.getFinishInfo($scope.questions);
   $scope.congratsText = [
     "Use Auth0 you definetly need, youung padawan. Anyway, FREE Bitcoins you get :).",
