@@ -39,9 +39,9 @@ angular.module('quiz.quiz.finish', [
           type: 'quiz'
         }
       }).then(function (data) {
-        $scope.tweetText = 'The world now knows how awesome you are';
+        $scope.tweetText = 'Your awesomeness has been shared';
       }, function (err) {
-        $scope.tweetText = 'The world now knows how awesome you are';
+        $scope.tweetText = 'Your awesomeness has been shared';
       });
     };
   }
