@@ -27,12 +27,15 @@ angular.module("quiz/finish/finish.tpl.html", []).run(["$templateCache", functio
     "    <h1>{{finishInfo.ok || 0}}/{{finishInfo.total}}</h1>\n" +
     "    <p>{{congratsText[finishInfo.ok]}}</p>\n" +
     "\n" +
-    "    <div class=\"input-group\">\n" +
+    "    \n" +
+    "    <div class=\"input-group handle-group\">\n" +
     "      <span class=\"input-group-addon\">@</span>\n" +
     "      <input type=\"text\" class=\"form-control\" placeholder=\"Enter your twitter screen name\" ng-model=\"handle\">\n" +
     "    </div>\n" +
+    "    \n" +
+    "\n" +
     "    <p><a ng-click=\"tweet()\" ng-disabled=\"!handle\" class=\"btn btn-primary btn-twitter btn-lg\" role=\"button\">{{tweetText}}</a></p>\n" +
-    "    <p><a ng-click=\"start()\" class=\"btn btn-primary btn-twitter btn-success btn-lg\" role=\"button\">Start again</a></p>\n" +
+    "    <p><a ng-click=\"start()\" class=\"btn btn-primary btn-success btn-lg\" role=\"button\">Start again</a></p>\n" +
     "  </div>\n" +
     "</div>");
 }]);

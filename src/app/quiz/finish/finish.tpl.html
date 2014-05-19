@@ -3,11 +3,14 @@
     <h1>{{finishInfo.ok || 0}}/{{finishInfo.total}}</h1>
     <p>{{congratsText[finishInfo.ok]}}</p>
 
-    <div class="input-group">
+    
+    <div class="input-group handle-group">
       <span class="input-group-addon">@</span>
       <input type="text" class="form-control" placeholder="Enter your twitter screen name" ng-model="handle">
     </div>
+    
+
     <p><a ng-click="tweet()" ng-disabled="!handle" class="btn btn-primary btn-twitter btn-lg" role="button">{{tweetText}}</a></p>
-    <p><a ng-click="start()" class="btn btn-primary btn-twitter btn-success btn-lg" role="button">Start again</a></p>
+    <p><a ng-click="start()" class="btn btn-primary btn-success btn-lg" role="button">Start again</a></p>
   </div>
 </div>
