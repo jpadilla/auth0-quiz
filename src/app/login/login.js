@@ -34,7 +34,7 @@ angular.module( 'quiz.login', [
   $scope.login = function() {
         auth.signin({
           popup: true,
-          connections: ['twitter', 'Username-Password-Authentication']
+          connections: ['twitter']
         }).then(function() {
             $state.go('home');
         }, function() {
