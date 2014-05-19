@@ -19,6 +19,10 @@ angular.module( 'quiz.quiz.finish', [
     "You've mastered the challenge, youung padawan. FREE Bitcoins you get :)"
   ];
 
+  $scope.start = function() {
+    $state.go('home');
+  }
+
   $scope.tweetText = "Tell the world you're awesome";
 
   $scope.tweet = function() {

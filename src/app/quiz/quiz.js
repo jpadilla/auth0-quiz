@@ -10,7 +10,10 @@ angular.module( 'quiz.quiz', [
     abstract: true,
     controller: 'QuizCtrl',
     templateUrl: 'quiz/quiz.tpl.html',
-    data: { pageTitle: 'Quiz' }
+    data: { 
+      pageTitle: 'Quiz',
+      requiresLogin: true
+    }
   });
 })
 .controller( 'QuizCtrl', function HomeController( $scope, QuizHelper, $state) {

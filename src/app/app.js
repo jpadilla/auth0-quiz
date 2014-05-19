@@ -3,11 +3,13 @@ angular.module( 'quiz', [
   'templates-common',
   'quiz.home',
   'quiz.quiz',
+  'quiz.login',
   'ui.router'
 ])
 
-.config( function myAppConfig ( $stateProvider, $urlRouterProvider ) {
+.config( function myAppConfig ( $stateProvider, $urlRouterProvider, $locationProvider) {
   $urlRouterProvider.otherwise( '/' );
+  $locationProvider.hashPrefix("!") ;
 })
 
 .run( function run () {

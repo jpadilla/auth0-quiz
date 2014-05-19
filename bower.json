@@ -8,7 +8,9 @@
     "bootstrap": "~3.1",
     "angular-bootstrap": "~0.10.0",
     "angular-ui-router": "~0.2",
-    "auth0-styleguide": "~0.1"
+    "auth0-styleguide": "~0.1",
+    "auth0-angular" : "0.4.0",
+    "auth0-widget.js": "~4.0.0"
   },
   "dependencies": {}
 }

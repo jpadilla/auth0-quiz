@@ -6,9 +6,12 @@ angular.module( 'quiz.home', [
     url: '/',
     controller: 'HomeCtrl',
     templateUrl: 'home/home.tpl.html',
-    data: { pageTitle: 'Start the quiz' }
+    data: { 
+      pageTitle: 'Start the quiz',
+      requiresLogin: true
+    }
   });
 })
 .controller( 'HomeCtrl', function HomeController( $scope ) {
-  $scope.test = "Test variable";
+  
 });

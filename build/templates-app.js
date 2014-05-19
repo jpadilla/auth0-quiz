@@ -1,17 +1,22 @@
-angular.module('templates-app', ['home/home.tpl.html', 'quiz/finish/finish.tpl.html', 'quiz/question/question.tpl.html', 'quiz/quiz.tpl.html']);
+angular.module('templates-app', ['home/home.tpl.html', 'login/login.tpl.html', 'quiz/finish/finish.tpl.html', 'quiz/question/question.tpl.html', 'quiz/quiz.tpl.html']);
 
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
     "<div>\n" +
     "  <h1 id=\"logo\"><img src=\"assets/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
-    "  <div class=\"home-description\">\n" +
-    "  	\n" +
-    "	  <p class=\"\">Hi and welcome to the Auth0 quiz. Do you want to test how much you know about security, authentication and authorization of your app?</p>\n" +
-    "	  <p>Then just click on start and let's start with this.</p>\n" +
-    "\n" +
+    "  <button class=\"btn btn-lg btn-primary\" ui-sref=\"quiz.question({number: 0})\">Start Quiz</button>\n" +
+    "</div>");
+}]);
+
+angular.module("login/login.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("login/login.tpl.html",
+    "<div class=\"login-page clearfix\">\n" +
+    "  <div class=\"login-box auth0-box\">\n" +
+    "    <img src=\"https://i.cloudup.com/StzWWrY34s.png\" />\n" +
+    "    <h3>Auth0 Example</h3>\n" +
+    "    <p>Zero friction identity infrastructure, built for developers</p>\n" +
+    "    <a ng-click=\"login()\" class=\"btn btn-primary btn-lg btn-block\">SignIn</a>\n" +
     "  </div>\n" +
-    "\n" +
-    "  <button class=\"btn btn-lg btn-primary\" ui-sref=\"quiz.question({number: 0})\">Start</button>\n" +
     "</div>");
 }]);
 
@@ -19,7 +24,7 @@ angular.module("quiz/finish/finish.tpl.html", []).run(["$templateCache", functio
   $templateCache.put("quiz/finish/finish.tpl.html",
     "<div>\n" +
     "  <div class=\"jumbotron\">\n" +
-    "    <h1>{{finishInfo.ok}}/{{finishInfo.total}}</h1>\n" +
+    "    <h1>{{finishInfo.ok || 0}}/{{finishInfo.total}}</h1>\n" +
     "    <p>{{congratsText[finishInfo.ok]}}</p>\n" +
     "\n" +
     "    <div class=\"input-group\">\n" +
@@ -27,6 +32,7 @@ angular.module("quiz/finish/finish.tpl.html", []).run(["$templateCache", functio
     "      <input type=\"text\" class=\"form-control\" placeholder=\"Enter your twitter screen name\" ng-model=\"handle\">\n" +
     "    </div>\n" +
     "    <p><a ng-click=\"tweet()\" ng-disabled=\"!handle\" class=\"btn btn-primary btn-twitter btn-lg\" role=\"button\">{{tweetText}}</a></p>\n" +
+    "    <p><a ng-click=\"start()\" class=\"btn btn-primary btn-success btn-lg\" role=\"button\">Start again</a></p>\n" +
     "  </div>\n" +
     "</div>");
 }]);
