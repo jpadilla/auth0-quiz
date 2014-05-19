@@ -24,7 +24,7 @@ angular.module('quiz.helper', ['quiz.data']).service('QuizHelper', [
       var stats = _.countBy(results);
       return {
         ok: stats.true,
-        total: stats.true + stats.false
+        total: questions.length
       };
     };
     var randomNumber = function () {

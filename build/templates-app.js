@@ -18,10 +18,16 @@ angular.module("home/home.tpl.html", []).run(["$templateCache", function($templa
 angular.module("quiz/finish/finish.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("quiz/finish/finish.tpl.html",
     "<div>\n" +
-    "  <p>You've answered {{finishInfo.ok}} answers correctly of a total of {{finishInfo.total}}</p>\n" +
-    "  <p>This are the questions we ask ourselves every day at Auth0.</p>\n" +
-    "  <p>This are the questions you need to answer to create a very secure and easy to use Authentication and Authorization provider.</p>\n" +
-    "  <p>This are the questions you don't need to worry about if you use Auth0. You only have to worry about the core of your business</p>\n" +
+    "  <div class=\"jumbotron\">\n" +
+    "    <h1>{{finishInfo.ok}}/{{finishInfo.total}}</h1>\n" +
+    "    <p>{{congratsText[finishInfo.ok]}}</p>\n" +
+    "\n" +
+    "    <div class=\"input-group\">\n" +
+    "      <span class=\"input-group-addon\">@</span>\n" +
+    "      <input type=\"text\" class=\"form-control\" placeholder=\"Enter your twitter screen name\" ng-model=\"handle\">\n" +
+    "    </div>\n" +
+    "    <p><a ng-click=\"tweet()\" ng-disabled=\"!handle\" class=\"btn btn-primary btn-twitter btn-lg\" role=\"button\">{{tweetText}}</a></p>\n" +
+    "  </div>\n" +
     "</div>");
 }]);
 

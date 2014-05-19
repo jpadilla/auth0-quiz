@@ -26,7 +26,7 @@ angular.module('quiz.helper', ['quiz.data'])
 
 			return {
 				ok: stats.true,
-				total: stats.true + stats.false,
+				total: questions.length,
 			}
 		}
 
