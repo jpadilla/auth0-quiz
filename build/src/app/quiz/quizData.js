@@ -14,7 +14,7 @@ angular.module('quiz.data', []).factory('QuizData', function () {
       answers: [
         'I use cookies, so I\'m not vulnerable to CSRF',
         'My site does not have CSRF issues because it only does GETs',
-        'I use token-based authentication which has CSRF protection built-in'
+        'I use token-based authentication which has CSRF protection built-in or a nounce'
       ],
       correct: 2
     },
@@ -32,7 +32,7 @@ angular.module('quiz.data', []).factory('QuizData', function () {
       question: 'Why is bcrypt better to hash passwords?',
       answers: [
         'Uses multiple iterations to hash passwords',
-        'Uses hashes, salt and pepper'
+        'Uses hashes, salt and lasers'
       ],
       correct: 0
     },
