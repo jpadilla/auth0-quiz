@@ -14,7 +14,8 @@ angular.module( 'quiz.login', [
   authProvider.init({
     domain: 'codecademy.auth0.com',
     clientID: 'yUiinEhNCEa7jztDjn2d87KHIFUFYNHL',
-    callbackURL: location.href
+    callbackURL: location.href,
+    callbackOnLocationHash: true
   });
 
   $httpProvider.interceptors.push('authInterceptor');
