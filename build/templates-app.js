@@ -2,7 +2,7 @@ angular.module('templates-app', ['home/home.tpl.html', 'login/login.tpl.html', '
 
 angular.module("home/home.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("home/home.tpl.html",
-    "<div>\n" +
+    "<div class=\"home\">\n" +
     "  <h1 id=\"logo\"><img src=\"assets/auth0_logo_final_blue_RGB.png\" /></h1>\n" +
     "  <button class=\"btn btn-lg btn-primary\" ui-sref=\"quiz.question({number: 0})\">Start Quiz</button>\n" +
     "</div>");
